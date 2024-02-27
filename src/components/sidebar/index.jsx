@@ -13,12 +13,12 @@ const Sidebar = ({ expanded, toggleSidebar }) => {
     <aside
       className={classnames(
         {
-          'w-[15%]': expanded,
+          'w-[80%] lg:w-[15%]': expanded,
         },
         {
           'w-10%': !expanded,
         },
-        'bg-secondary h-screen p-4 text-whites fixed left-0 cursor-pointer'
+        'bg-secondary h-screen p-4 text-whites fixed left-0 cursor-pointer z-10'
       )}
     >
       <div className='text-white flex justify-between items-center'>
